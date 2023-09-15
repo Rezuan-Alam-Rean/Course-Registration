@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "course_image": "https://i.ibb.co/SsRBZ9p/Rectangle-2-2.png",
+        "course_name": "Introduction to Programming",
+        "course_details": "Learn the fundamentals of programming in this introductory course.",
+        "price": 4999,
+        "credit": 3
+    },
+    {
+        "id": 2,
+        "course_image": "https://i.ibb.co/9tVzFF6/Rectangle-2.png",
+        "course_name": "Introduction to OOP Python",
+        "course_details": "Become a web development pro with this comprehensive bootcamp.",
+        "price": 19999,
+        "credit": 5
+    },
+    {
+        "id": 3,
+        "course_image": "https://i.ibb.co/c1TrMxT/Rectangle-2-1.png",
+        "course_name": "Database (MySQL)",
+        "course_details": "Explore the world of data science and analytics in this course.",
+        "price": 7999,
+        "credit": 4
+    },
+    {
+        "id": 4,
+        "course_image": "https://i.ibb.co/0nFnYyh/Rectangle-2-3.png",
+        "course_name": "Introduction to Algorithms",
+        "course_details": "Master the basics of digital marketing and online advertising.",
+        "price": 5999,
+        "credit": 3
+    },
+    {
+        "id": 5,
+        "course_image": "https://i.ibb.co/5vSGk0C/Rectangle-2-4.png",
+        "course_name": "Introduction to C++ for DSA",
+        "course_details": "Get started with graphic design and unleash your creativity.",
+        "price": 6999,
+        "credit": 3
+    },
+    {
+        "id": 6,
+        "course_image": "https://i.ibb.co/vxSY7bn/Rectangle-2-5.png",
+        "course_name": "Software Engineering",
+        "course_details": "Dive into the exciting world of AI and machine learning.",
+        "price": 12999,
+        "credit": 6
+    },
+    {
+        "id": 7,
+        "course_image": "https://i.ibb.co/Cn8JdJt/Rectangle-2-6.png",
+        "course_name": "Problem-Solving Part",
+        "course_details": "Develop ethical leadership skills for the modern business world.",
+        "price": 8999,
+        "credit": 4
+    },
+    {
+        "id": 8,
+        "course_image": "https://i.ibb.co/m5Ln6g9/Rectangle-3.png",
+        "course_name": "Basic Data Structures",
+        "course_details": "Immerse yourself in the Spanish language and culture.",
+        "price": 14999,
+        "credit": 5
+    },
+    {
+        "id": 9,
+        "course_image": "https://i.ibb.co/mFgpPCy/Rectangle-3-1.png",
+        "course_name": "AWS, Cloud Computing",
+        "course_details": "Relax and rejuvenate with our yoga and meditation retreat.",
+        "price": 7999,
+        "credit": 2
+    }
+]
