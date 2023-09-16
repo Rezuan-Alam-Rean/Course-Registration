@@ -11,6 +11,8 @@ const Home = () => {
 
     
     const [allCourse, setallCourse] = useState([]);
+    const [selectedCourse, setSelectedCourse] = useState([]);
+
 
     useEffect(() => {
         fetch("./data.json")
@@ -18,9 +20,21 @@ const Home = () => {
           .then((data) => setallCourse(data));
       }, []);
 
-    //   console.log(allCourse);
+   
 
+    const handleSelectCourse = (Course) => {
+        const isExist = selectedCourse.find((item) => item.id == Course.id);
     
+        
+    
+        if (isExist) {
+          return alert("already add this course");
+        } else {
+            setSelectedCourse([...selectedCourse, Course]);
+         
+          }
+        };
+         
 
 
 
@@ -44,7 +58,7 @@ const Home = () => {
               <p>Credit : {Course.credit} </p>
             </div>
             <button
-              
+              onClick={() => handleSelectCourse(Course)}
               className="card-btn"
             >
               Select
@@ -54,9 +68,11 @@ const Home = () => {
           
         </div>
         <div className="cart">
-        
-                <h1>this is cart </h1>
-          
+       
+          <Cards
+              selectedCourse={selectedCourse}
+             
+          ></Cards>
         </div>
       </div>
     </div>
