@@ -11,6 +11,8 @@
     width:265px;
     height: 350px;
     border: 1px solid gray;
+    border-radius: 12px;
+   padding: 20px;
 }
 .photo{
   
@@ -26,7 +28,7 @@
 }
 .home-container{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 .card-container{
    
@@ -34,11 +36,15 @@
      flex-wrap: wrap; */
      display: grid;
      grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    border: 2px solid red;
+    gap: 20px;
+   
 }
 .cart{
-    border: 2px solid yellow;
-    width: 350px;
-   
+    width: 300px;
+    padding: 20px;
+    height: 350px;
+    border: 1px solid gray;
+    border-radius: 12px;
+
+   text-align: start;
 }

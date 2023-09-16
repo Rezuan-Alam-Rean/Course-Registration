@@ -11,15 +11,15 @@ const Cards = ({selectedCourse , remaining, totalcredit}) => {
     return (
       <div>
 
-      <h5>Credit Hour Remaining  : {remaining}  hr </h5>
+      <h4>Credit Hour Remaining : {remaining} hr </h4>
         <hr />
-        <h3>Course Name </h3>
+        <h2>Course Name </h2>
         
         {selectedCourse.map((Course) => (
         <li key={Course.id}>{Course.course_name}</li>
       ))}
             <hr />
-          <h5>Total Credit Hour : {totalcredit}</h5>
+          <h3>Total Credit Hour : {totalcredit}</h3>
       </div>
     );
   };
