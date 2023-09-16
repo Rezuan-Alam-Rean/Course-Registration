@@ -13,7 +13,7 @@ const Home = () => {
     const [allCourse, setallCourse] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
     const [remaining, setRemaining] = useState(0);
-    const [totalCost, setTotalCost] = useState(0);
+    const [totalcredit, setTotalcredit] = useState(0);
 
 
 
@@ -29,23 +29,23 @@ const Home = () => {
     const handleSelectCourse = (Course) => {
         const isExist = selectedCourse.find((item) => item.id == Course.id);
     
-        let cost = Course.credit;
+        let credit = Course.credit;
     
         if (isExist) {
-          return alert("already add this course");
+          return alert("already add this course in your cart");
         } else {
 
             selectedCourse.forEach((item) => {
-                cost = cost + item.credit;
+                credit = credit + item.credit;
               });
-              const remaining = 20 - cost;
-              if (cost > 20) {
-               alert("credit used");
+              const remaining = 20 - credit;
+              if (credit > 20) {
+               alert(" you can not add course more than 20 credit.your all credit hours are finished");
 
             } else {
                 setRemaining(remaining);
         
-                setTotalCost(cost);
+                setTotalcredit(credit);
                 setSelectedCourse([...selectedCourse, Course]);
             }
 
@@ -89,7 +89,7 @@ const Home = () => {
           <Cards
               selectedCourse={selectedCourse}
               remaining={remaining}
-              totalCost={totalCost}
+              totalcredit={totalcredit}
           ></Cards>
         </div>
       </div>

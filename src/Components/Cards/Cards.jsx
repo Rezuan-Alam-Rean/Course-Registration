@@ -5,20 +5,21 @@ import "./Cards.css" ;
 
 
 
-const Cards = ({selectedCourse , remaining, totalCost}) => {
+const Cards = ({selectedCourse , remaining, totalcredit}) => {
     
   
     return (
       <div>
 
-      <h5>remaining:{remaining}</h5>
-      <h5>TotalCost:{totalCost}</h5>
+      <h5>Credit Hour Remaining  : {remaining}  hr </h5>
+        <hr />
         <h3>Course Name </h3>
         
         {selectedCourse.map((Course) => (
         <li key={Course.id}>{Course.course_name}</li>
       ))}
-
+            <hr />
+          <h5>Total Credit Hour : {totalcredit}</h5>
       </div>
     );
   };
