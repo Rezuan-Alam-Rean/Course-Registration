@@ -5,11 +5,14 @@ import "./Cards.css" ;
 
 
 
-const Cards = ({selectedCourse}) => {
+const Cards = ({selectedCourse , remaining, totalCost}) => {
     
   
     return (
       <div>
+
+      <h5>remaining:{remaining}</h5>
+      <h5>TotalCost:{totalCost}</h5>
         <h3>Course Name </h3>
         
         {selectedCourse.map((Course) => (
